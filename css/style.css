@@ -203,16 +203,16 @@ footer div {
     line-height: 1.5em;
 }
 
-.itens:first-child {
-    font-weight: bold;
+.itens {
+    list-style: square;
 }
 
-.itens:first-child::before {
-    content: "☆";
+.itens:nth-child(1n)::after {
+    content: ";";
 }
 
-.itens::before {
-    content: "★";
+.itens:last-child::after {
+    content: ".";
 }
 
 .imagem-beneficios {
@@ -332,11 +332,11 @@ form label, form legend {
 
 table {
     margin: 20px 0 40px;
+    color: white;
 }
 
 thead {
     background: #2e1203;
-    color: white;
     font-weight: bold;
 }
 
@@ -346,7 +346,7 @@ td, th {
 }
 
 td {
-    background: #ffffff3f;
+    background: #7c4f15;
 }
 
 /* CSS responsivo */
